@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+    <h1>Project Gallery</h1>
+    <span id="current-date"></span>
+    <script>
+    const currentDate = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById('current-date').textContent = currentDate.toLocaleDateString('en-US', options);
+  </script>
+   </header>
+    <div class="gallery">
+      <div class="card">
+        <img src="./accets/screencapture-lisaevermore-github-io-HobbyPage-2023-03-30-22_05_36.png" alt="Project 1">
+        <h2>Hobby Page </h2>
+        <p class="description">This is a simple hobby page created with HTML, CSS, and JavaScript. The page features information about my hobby, including a picture, a list of items related to the hobby, and a link to another website for more information. </p>
+        <button class="btn"> Description</button>
+      </div>
+      <div class="card">
+        <img src="./accets/screencapture-127-0-0-1-5500-Project-Gallery-index-html-2023-03-30-22_11_17.png" alt="Project 2">
+        <h2>Project gallery</h2>
+        <p class="description">Project gallery page that showcases my projects. The page will have a section or card for each project, with a title, an image, and a description. Use flexbox to arrange the cards on the page, and resize them based on screen width. </p>
+        <button class="btn"> Description</button>
+      </div>
+      <div class="card">
+        <img src="project3.jpg" alt="Project 3">
+        <h2>Coming Soon!</h2>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <button class="btn"> Description</button>
+      </div>
+    </div>
+    <footer class="footer">
+        &copy; 2023 Project Gallery
+        
+      </footer>
+      <script>
+        // Add event listeners to each button to toggle the description text
+        var buttons = document.querySelectorAll('.btn');
+        for (var i = 0; i < buttons.length; i++) {
+          buttons[i].addEventListener('click', function() {
+            var description = this.parentElement.querySelector('.description');
+            if (description.style.display === 'none') {
+              description.style.display = 'block';
+            } else {
+              description.style.display = 'none';
+            }
+          });
+        }
+      </script>
+</body>
+</html>
+

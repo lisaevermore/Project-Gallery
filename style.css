@@ -1,0 +1,42 @@
+/* Set up the grid for the project cards */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    flex-basis: 300px;
+    margin-bottom: 20px;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  /* Style the button to toggle the description text */
+  .btn {
+    background-color: #f7f7f7;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  .btn:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  .footer{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .card{
+    margin: 20px;
+  }
